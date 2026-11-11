@@ -4,6 +4,7 @@
   "description": "한국어 텍스트 감성 분석 웹 서비스 (Vercel + OpenAI + Supabase)",
   "type": "module",
   "scripts": {
+    "build": "echo 'Build complete'",
     "dev": "node server.js",
     "start": "node server.js",
     "vercel:dev": "vercel dev",
