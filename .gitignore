@@ -1,0 +1,30 @@
+# ==============================================================================
+# .gitignore: Git에 업로드하지 않을 파일 및 폴더 목록
+# ==============================================================================
+
+# 1. 의존성 패키지 폴더 (용량이 매우 크고 package.json으로 언제든 재생성 가능)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 2. 환경 변수 및 비밀 키 파일 (보안: API 키, DB 비밀번호 절대 유출 금지)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# 3. Vercel 배포 및 개발 임시 캐시 폴더
+.vercel/
+
+# 4. 운영체제 및 에디터 임시 파일
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
